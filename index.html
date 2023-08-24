@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        <style>
+        *{
+            margin: 0;
+        }
+        .home{
+            height: 100vh;
+            width: 100%;
+            background-color: skyblue;
+        }
+        .home nav{
+            /* border: 3px black solid; */
+            height: 70px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            right: 70px;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 30px;
+            color:deeppink;
+            font-family: 'Dancing Script', cursive;;
+        }
+        .main .name{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-150px,-150px);
+        }
+        .name h1{
+            color:indigo;
+            font-size: 30px;
+            margin-left: -50px;
+            margin-top: 100px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .name h2{
+            color:indigo;
+            font-size: 30px;
+            margin-left: -200px;
+            margin-top: 50px;
+            font-family: 'Dancing Script', cursive;
+        }
+        #icon{
+            font-size: 70px;
+            position: relative;
+            left: 100px;
+            top: 60px;
+            color: crimson;
+            animation: bounce 0.5s ease infinite alternate;
+        }
+        @keyframes bounce{
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform:translateY(10px)
+            }
+        }
+        .about{
+            height: 150vh;
+            width: 100%;
+            background-color: aqua;
+        }
+        .about h2{
+            font-size: 50px;
+            color: darksalmon;
+            margin-left: 570px;
+        }
+        .about img{
+            position: absolute;
+            left: 450px;
+        }
+        .para{
+            font-size: 30px;
+            font-style: italic;
+            color: blue;
+            position: relative;
+            left: 200px;
+            top: 500px;
+            width: 1000px;
+    }
+    .skill{
+    height: 105vh;
+    width: 100%;
+    background-color: rgba(86, 216, 239, 0.644);
+}
+
+.skill .inner_skill{
+    position: relative;
+    top:50px;
+    height: 550px;
+    width: 60%;
+    background-color: rgb(39, 150, 247);
+    position: relative;
+    left:20%;
+    border-radius: 20px;
+}
+
+.skill .inner_skill h2{
+    position: relative;
+    top:15px;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px 2px rgb(235, 232, 232);    
+    font-size: 30px;
+}
+
+.skill .inner_skill p{
+    font-size: 23px;
+    padding: 7px;
+    font-family: 'Rubik Wet Paint', cursive;
+    text-shadow: 1px 1px  rgb(232, 229, 229);
+}
+
+.skill .inner_skill .skill_rating{
+    width: 90%;
+    background-color: #9fe5f1;
+    border-radius: 5px;
+    height: 20px;
+    position: relative;
+    left:30px;
+}
+
+.skill .inner_skill .rating_bar1{
+    background-color: #ebff3a;
+    border-radius: 5px;
+    height: 100%;
+    width: 70%; /* Adjust this value to set the initial rating */
+    transition: width 1s ease-in-out;
+
+    
+    animation-name:load1;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:alternate;
+}
+@keyframes load1 {
+    from{
+       width:0px;
+    }
+    to{
+        width:70%;
+    }
+}
+
+.skill .inner_skill .rating_bar2{
+    background-color: #34db34;
+    border-radius: 5px;
+    height: 100%;
+    width: 55%; 
+    /* Adjust this value to set the initial rating */
+    transition: width 1s ease-in-out;
+
+    
+    animation-name:load2;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:alternate;
+}
+@keyframes load2 {
+    from{
+       width:0px;
+    }
+    to{
+        width:55%;
+    }
+}
+
+
+.skill .inner_skill .rating_bar4{
+    background-color: #dd5fad;
+    border-radius: 5px;
+    height: 100%;
+    width: 60%; /* Adjust this value to set the initial rating */
+    transition: width 1s ease-in-out;
+ 
+    
+    animation-name:load3;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:alternate;
+}
+@keyframes load3 {
+    from{
+       width:0px;
+    }
+    to{
+        width:60%;
+    }
+}
+
+.skill .inner_skill .rating_bar5{
+    background-color: #f6bf48;
+    border-radius: 5px;
+    height: 100%;
+    width: 90%; /* Adjust this value to set the initial rating */
+    transition: width 1s ease-in-out;
+
+    
+    animation-name:load4;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:alternate;
+}
+@keyframes load4 {
+    from{
+       width:0px;
+    }
+    to{
+        width:90%;
+    }
+}
+
+.skill .inner_skill .rating_bar6{
+    background-color: #23700b;
+    border-radius: 5px;
+    height: 100%;
+    width: 85%; /* Adjust this value to set the initial rating */
+    transition: width 1s ease-in-out;
+
+    
+    animation-name:load5;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:alternate;
+}
+@keyframes load5 {
+    from{
+       width:0px;
+    }
+    to{
+        width:85%;
+    }
+}
+
+.skill .inner_skill .rating_bar7{
+    background-color: #f35b5b;
+    border-radius: 5px;
+    height: 100%;
+    width: 40%; /* Adjust this value to set the initial rating */
+    transition: width 1s ease-in-out;
+
+    
+    animation-name:load6;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:alternate;
+}
+@keyframes load6 {
+    from{
+       width:0px;
+    }
+    to{
+        width:40%;
+    }
+}
+.project{
+    height: 140vh;
+    width: 100%;
+
+}
+
+.project h1{
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px white;
+}
+
+.project img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    left:200px;
+}
+
+.project button{
+    border: none;
+    background-color: rgba(224, 26, 26, 0.884);
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left:350px;
+    bottom: 70px;
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.project button:hover{
+    background-color: rgba(240, 74, 74, 0.655);
+}
+
+.project button a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+
+.project .project1 h2{
+    position: relative;
+    left:800px;
+    top:50px;
+    font-family: 'Rubik Wet Paint', cursive;
+    text-shadow: 2px 2px white;
+}
+
+.project .project2 h2{
+    position: relative;
+    left:630px;
+    top:50px;
+    font-family: 'Rubik Wet Paint', cursive;
+    text-shadow: 2px 2px white;
+}
+
+.contact{
+    height: 99vh;
+    width: 100%;
+    background-color: rgb(253, 85, 102);
+}
+.contact a{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left:330px;
+    top:60px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.contact h1{
+    padding: 30px 10px 10px 10px;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px white;
+}
+
+
+.contact img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact img:hover{
+    background-color: #61f1f3;
+    border-radius: 50px;
+}
+
+.contact .cv h1{
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px white;
+    position: relative;
+    top:130px;    
+}
+
+.contact .res a{
+    display:contents;
+}
+
+.contact .res button{
+    border: none;
+    background-color: rgb(252,230,157);
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Crimson Text';
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 190px;
+    left:400px;
+}
+
+.contact .res button a{
+    color: black;
+}
+
+.contact .res button:hover{
+    background-color: antiquewhite;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- home section starts -->
+        <div class="home">
+        <nav>
+            <a href="#about">ABOUT</a>
+            
+            <a href="#project">PROJECT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <div class="name">
+            <h1>HI, I AM PREMAJA</h1>
+            <h2>I AM PYTHON FULL STACK DEVELOPER</h2>
+            <a href="#icon">
+                <span class="material-symbols-outlined "
+                id="icon">expand_circle_down
+                </span>
+            </a>
+        </div>
+        </div>
+
+    </div>
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+    <div class="about" id="about">
+        <h2>ABOUT ME</h2>
+        <img src="c:\Users\CHROME\Documents\WhatsApp Image prema2.jpg" alt="" height="500px" width="500px">
+        <p class="para" align="justify">I AM 23 YEARS OLD,B.S.C STUDENT AT(MARGADARSI DEGREE COLLEGE).I REALLY ENJOY PROBLEM SOLVING AS WELL AS MAKING THINGS PRETTY AND EASY TO USE.I CAN'T STOP LEARNING NEW THINGS,I BELAVE IN "PRACTICE MAKES MORE IMPROVEMENTS".</p>
+
+    </div>
+    <!-- about end -->
+    <!-- skills start -->
+    <div class="skill">
+        <div class="inner_skill">
+            <h2>MY SKILLS</h2>
+            <p>C Program</p>
+            <div class="skill_rating">
+                <div class="rating_bar1"></div>
+            </div>
+            <p>C++</p>
+            <div class="skill_rating">
+                <div class="rating_bar2"></div>
+            </div>
+            <p>Python</p>
+            <div class="skill_rating">
+                <div class="rating_bar4"></div>
+            </div>
+            <p>HTML</p>
+            <div class="skill_rating">
+                <div class="rating_bar5"></div>
+            </div>
+            <p>CSS</p>
+            <div class="skill_rating">
+                <div class="rating_bar6"></div>
+            </div>
+            <p>SQL</p>
+            <div class="skill_rating">
+                <div class="rating_bar7"></div>
+            </div>
+        </div>
+    <!-- project start -->
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+        
+    </pre>
+    <div class="project" id="project">
+        <h1>PROJECTS</h1>
+        <div class="project1">
+            <h2>OTT Clone</h2>
+            <img src="c:\Users\CHROME\Documents\pawan.jpg" alt="" height="100px" width="100px">
+            <button><a href="https://main--jade-cannoli-0ea369.netlify.app/" target="_blank">VIEW
+                    PROJECT</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button><a href="https://github.com/Srimathi150302/OTT-hotstar-clone" target="_blank">VIEW SOURCE
+                    CODE</a></button>
+        </div>
+        <div class="project2">
+            <h2>BLOOD DONATION</h2>
+            <img src="c:\Users\CHROME\Documents\donate.jpg" alt="" height="100px" width="100px">
+            <button><a href="#" target="_blank">VIEW PROJECT</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button><a href="https://github.com/IBM-EPBL/IBM-Project-13296-1668575129" target="_blank">VIEW SOURCE
+                    CODE</a></button>
+        </div>
+    </div>
+    <!-- project end -->
+    <!-- contact start -->
+    <div class="contact" id="contact">
+        <h1>CONTACT</h1>
+        <a href="mailto: 6390premaja@gmail.com" title="630premaja@gmail.com"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202010/Google_Gmail_New_Logo_India_To_1200x768.jpeg" alt="" height="50px" width="50px"></a>
+        <a href="tel:9880xxxxxx" title="9880xxxxxx"><img src="https://w7.pngwing.com/pngs/1012/323/png-transparent-computer-icons-mobile-phones-telephone-call-round-miscellaneous-text-monochrome.png" alt=""height="50px" width="50px"></a>
+        <a href="https://twitter.com/i/flow/login?lang=en" title="Twitter"><img src="https://logowik.com/content/uploads/images/908_twitter.jpg" alt=""height="50px" width="50px"></a>
+        <a href="https://www.linkedin.com/feed/" title="Linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt=""height="50px" width="50px"></a>
+        <a href="https://www.instagram.com/" title="Instagram"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt=""height="50px" width="50px"></a>
+        <a href="https://www.facebook.com/" title="Facebook"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt=""height="50px" width="50px"></a>
+        <a href="https://goo.gl/maps/Hqp47SUCvCHMrnVR9" title="Address"><img src="https://png.pngtree.com/element_our/sm/20180526/sm_5b09436fd0515.png" alt=""height="50px" width="50px"></a>
+
+        <div class="cv">
+            <h1>RESUME</h1>
+        </div>
+        
+        <div class="res">
+            <button><a href="c:\Users\CHROME\Documents\PREMAJA S RESUME.pdf" target="_blank">VIEW RESUME</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button><a href="c:\Users\CHROME\Documents\PREMAJA S RESUME.pdf"
+                target="_blank">DOWNLOAD RESUME</a></button>
+        </div>
+    </div>
+
+    <!-- contact end -->
+    
+</body>
+</html>
